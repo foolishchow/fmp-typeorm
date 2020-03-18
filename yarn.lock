@@ -909,13 +909,6 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dot-get@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/dot-get/-/dot-get-1.0.1.tgz#3ec322be7ab64f6e3f34ff69232400d9d34fcbfe"
-  integrity sha1-PsMivnq2T24/NP9pIyQA2dNPy/4=
-  dependencies:
-    lodash "^3.10.1"
-
 dotenv@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
@@ -2178,11 +2171,6 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
-lodash@^3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-  integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
-
 long@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
@@ -2261,10 +2249,10 @@ micromatch@^4.0.2:
     braces "^3.0.1"
     picomatch "^2.0.5"
 
-midway-core@^1.17.1:
-  version "1.17.1"
-  resolved "http://localhost:4873/midway-core/-/midway-core-1.17.1.tgz#31e128b2e90e567d7fffcc37c0b92651f9cccc37"
-  integrity sha512-7VSwbbdoHXbGMR3vVSc7eYhy5OflqLz1qmAjZ9r+KkrWsrHLUe1s4zanG0CUjOlAnVpFNhsFlNtoD0KSAZGF1g==
+midway-core@^1.18.0:
+  version "1.18.0"
+  resolved "http://localhost:4873/midway-core/-/midway-core-1.18.0.tgz#9eae7a2bfd5d6caba214dc64f3bea6170d90b301"
+  integrity sha512-/jdCOlrbITi9kFrg6m+JvSmugfPhytkc9O9v2PmwwbNbTs1Aq1D7BaqAUZdA05ofXLp1uGWkq/YbKf2jGEjevg==
   dependencies:
     "@midwayjs/decorator" "^1.17.1"
     camelcase "^5.2.0"
@@ -2274,19 +2262,19 @@ midway-core@^1.17.1:
     injection "^1.8.0"
     is-type-of "^1.2.1"
 
-midway-schedule@^1.17.1:
-  version "1.17.1"
-  resolved "http://localhost:4873/midway-schedule/-/midway-schedule-1.17.1.tgz#9b7bb8ee3db2c221e368f72038d793cbb9deaf86"
-  integrity sha512-Be8EF1ecmrv+LkbubkBkPOTlX0pLviqYxtAHTHNXpnzSBw6tYYJOWV6kDT7L9L0dxgZGNFwgHPzePTQJxj4/xA==
+midway-schedule@^1.18.1:
+  version "1.18.1"
+  resolved "http://localhost:4873/midway-schedule/-/midway-schedule-1.18.1.tgz#d422f175d9c5820d5479ba40560667c42d465b75"
+  integrity sha1-1CLxddnFgg1UebpAVgZnxC1GW3U=
   dependencies:
     "@midwayjs/decorator" "^1.17.1"
     injection "^1.8.0"
     is-type-of "^1.2.1"
 
-midway-web@^1.17.1:
-  version "1.17.1"
-  resolved "http://localhost:4873/midway-web/-/midway-web-1.17.1.tgz#93539059fa372ca643e201749df3d1d1e49b4243"
-  integrity sha512-zRRHkCYAR6R8lncA/WtP11RJMojq07FN0ok57qfCtdVMiw2Eu5i8rF3obhUAwsa8rAFVWT8ZBjm2T/jCE8UzFw==
+midway-web@^1.18.1:
+  version "1.18.1"
+  resolved "http://localhost:4873/midway-web/-/midway-web-1.18.1.tgz#03f198609db97f996b99248c1981f12aca1126df"
+  integrity sha1-A/GYYJ25f5lrmSSMGYHxKsoRJt8=
   dependencies:
     "@eggjs/router" "^2.0.0"
     "@midwayjs/decorator" "^1.17.1"
@@ -2296,17 +2284,17 @@ midway-web@^1.17.1:
     egg-logger "^2.3.2"
     extend2 "^1.0.0"
     injection "^1.8.0"
-    midway-core "^1.17.1"
-    midway-schedule "^1.17.1"
+    midway-core "^1.18.0"
+    midway-schedule "^1.18.1"
     mkdirp "^0.5.1"
 
-midway@^1.17.1:
-  version "1.17.1"
-  resolved "http://localhost:4873/midway/-/midway-1.17.1.tgz#c6213348929263d8731088da1e2514e55bc0836c"
-  integrity sha512-SKAhRNpV5046R/5xAVJIxFS1rjX0BOdlTLcD2WiKsFD1udGiV5HnD7oXAsoMlKUhEEW5vr51Y4r7kZNxKdcBIQ==
+midway@^1.18.1:
+  version "1.18.1"
+  resolved "http://localhost:4873/midway/-/midway-1.18.1.tgz#35c8238d078899507fc8baa3b7eb619b91e70424"
+  integrity sha1-NcgjjQeImVB/yLqjt+thm5HnBCQ=
   dependencies:
     egg-cluster "^1.23.0"
-    midway-web "^1.17.1"
+    midway-web "^1.18.1"
 
 mime-db@1.43.0, "mime-db@>= 1.43.0 < 2":
   version "1.43.0"
