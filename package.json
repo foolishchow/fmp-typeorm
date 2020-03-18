@@ -1,6 +1,6 @@
 {
   "name": "fmp-typeorm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "foolishchow midway playground for typeorm",
   "typings": "index.d.ts",
   "eggPlugin": {

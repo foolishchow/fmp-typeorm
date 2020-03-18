@@ -34,7 +34,7 @@ const parseConnectOption = (
   name: string = "default"
 ) => {
   let fileExt = "/**/*.ts";
-  if (app.config.env != "local") {
+  if (process.env.NODE_ENV != "local") {
     fileExt = "/**/*.js";
   }
   option = pure(option);
