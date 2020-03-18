@@ -1,0 +1,27 @@
+{
+  "name": "fmp-typeorm",
+  "version": "0.0.1",
+  "description": "foolishchow midway playground for typeorm",
+  "typings": "index.d.ts",
+  "eggPlugin": {
+    "name": "typeorm"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "typeorm": "^0.2.18"
+  },
+  "devDependencies": {
+    "@types/node": "8.10.59",
+    "midway": "^1.17.1",
+    "typescript": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foolishchow/fmp-typeorm.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
