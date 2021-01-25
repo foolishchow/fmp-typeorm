@@ -1,5 +1,5 @@
-import { Connection, ConnectionOptions, ConnectionManager, Repository, getConnectionManager } from 'typeorm';
-import { providerWrapper, IApplicationContext } from "midway";
+import { Connection, ConnectionOptions, ConnectionManager, Repository, getConnectionManager, ObjectLiteral } from 'typeorm';
+import { providerWrapper, IApplicationContext, Application } from "midway";
 export interface TypeormConfig {
   /**
    * @description typeorm conn option
@@ -11,9 +11,19 @@ export interface TypeormConfig {
   clients?: {
     [key: string]: ConnectionOptions
   };
-
 }
 
+function getRepositoryName<T extends Function>(model: T) {
+  return model.name.replace(/[A-Z]/, w => w.toLowerCase()) + "Repository";
+}
+
+export interface Class<T> {
+  new(): T;
+}
+export async function getRepository<T>(app: Application, model: Class<T>): Promise<Repository<T>> {
+  let name = getRepositoryName(model);
+  return await app.applicationContext.getAsync(name);
+}
 
 export function makeRepository<T extends Function>(model: T) {
   const factory = (context: IApplicationContext) => {
@@ -28,7 +38,7 @@ export function makeRepository<T extends Function>(model: T) {
     });
     return result;
   }
-  let name = model.name.replace(/[A-Z]/, w => w.toLowerCase()) + "Repository";
+  let name = getRepositoryName(model);
   providerWrapper([{
     id: name,
     provider: factory

@@ -1,5 +1,5 @@
 import { Connection, ConnectionOptions, ConnectionManager, Repository } from 'typeorm';
-import { IApplicationContext } from "midway";
+import { IApplicationContext, Application } from "midway";
 export interface TypeormConfig {
     /**
      * @description typeorm conn option
@@ -12,6 +12,7 @@ export interface TypeormConfig {
         [key: string]: ConnectionOptions;
     };
 }
+export declare function getRepository<T extends Function>(app: Application, model: T): Promise<Repository<T>>;
 export declare function makeRepository<T extends Function>(model: T): (context: IApplicationContext) => any;
 declare module "egg" {
     interface Context {

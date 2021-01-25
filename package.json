@@ -1,6 +1,6 @@
 {
   "name": "fmp-typeorm",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "foolishchow midway playground for typeorm",
   "typings": "index.d.ts",
   "eggPlugin": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "8.10.59",
-    "midway": "^1.18.1",
+    "midway": "^1.0.0",
     "typescript": "^3.5.3"
   },
   "repository": {
